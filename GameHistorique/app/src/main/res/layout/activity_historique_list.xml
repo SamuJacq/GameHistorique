@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/stat_button"
+            android:layout_width="153dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/stat_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/add_partie_button"
+            android:layout_width="153dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/add_party_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Spinner
+            android:id="@+id/game_spinner"
+            android:spinnerMode="dialog"
+            android:layout_width="156dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stat_button" />
+
+        <EditText
+            android:id="@+id/number_player_filter_input"
+            android:layout_width="156dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="40dp"
+            android:hint="@string/number_player_filter_input"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_partie_button" />
+
+    <Button
+        android:id="@+id/filter_button"
+        android:layout_width="114dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/filter_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_spinner" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historique_recycler_view"
+        android:layout_width="409dp"
+        android:layout_height="393dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_player_filter_input"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

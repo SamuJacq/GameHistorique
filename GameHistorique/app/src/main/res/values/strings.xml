@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">GameHistorique</string>
+
+    <!-- texte de la page d'accueil -->
+    <string name="stat_button">Statistique</string>
+    <string name="add_party_button">Ajouter partie</string>
+    <string name="number_player_filter_input">nombre joueur</string>
+    <string name="game_name_accueil">nom : nom parti</string>
+    <string name="number_player_accueil">nombre de joueur : 0</string>
+    <string name="detail_button">détail</string>
+    <string name="filter_button">filtrer</string>
+    <string name="reset_button">reset</string>
+
+    <!-- texte de la page des statistiques -->
+    <string name="title_stat"><u>Statistique</u></string>
+    <string name="input_game_stat">nom du jeu </string>
+    <string name="number_party_game">nombre de partie : 0</string>
+    <string name="list_player">liste des joueurs :</string>
+    <string name="item_time">durée moyenne pour n joueurs : </string>
+    <string name="item_player">player </string>
+
+    <!-- texte de la page d'édition -->
+    <string name="title_edit"><u>Édition</u></string>
+    <string name="add_game_button">Ajouter jeu</string>
+    <string name="add_player_button">Ajouter joueur</string>
+    <string name="update_button">Modifier</string>
+
+    <!-- texte de la page de création d'un jeu -->
+    <string name="title_create_game"><u>Création d\'un jeu</u></string>
+    <string name="name_game_input">nom du jeu</string>
+    <string name="number_player_input">nombre de joueur</string>
+    <string name="time_game_input">durée en minute</string>
+    <string name="description_game_input">description</string>
+
+    <!-- texte de la page de création d'une partie -->
+    <string name="title_create_party"><u>Création \n d\'une partie</u></string>
+    <string name="name_party_input">nom de la party</string>
+    <string name="time_party_input">durée en minute</string>
+    <string name="description_party_input">description</string>
+    <string name="longitude_input">longitude</string>
+    <string name="latitude_input">latitude</string>
+
+    <!-- texte de la page d'ajout un joueur-->
+    <string name="title_add_player"><u>ajouter un joueur</u></string>
+    <string name="name_player_input">nom ou pseudo</string>
+    <string name="score_input">score</string>
+
+    <!-- texte de la page détail d'une party-->
+    <string name="title_detail"><u>détail partie</u></string>
+    <string name="name_detail_game">nom game</string>
+    <string name="name_detail_party">nom party</string>
+    <string name="description_detail">description</string>
+    <string name="time_party_detail">durée</string>
+    <string name="number_player_detail">nombre de joueur</string>
+    <string name="longitude_detail">longitude</string>
+    <string name="latitude_detail">latitude</string>
+
+    <!-- bouton commun-->
+    <string name="save_button">enregistrer</string>
+    <string name="capture_button">photo</string>
+    <string name="edit_button">édition partie</string>
+    <string name="recherche_button">recherche</string>
+
+    <!--Message erreur-->
+    <string name="error_form">veuillez remplir tous les champs</string>
+
+</resources>

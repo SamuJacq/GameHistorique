@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.hardware.camera2.full"/>
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <application
+        android:name=".repository.PartyIntentApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GameHistorique"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.StatActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activity.AddPlayerActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activity.CreateGameActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activity.CreatePartyActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activity.DetailsPartyActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activity.EditActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

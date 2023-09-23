@@ -1,0 +1,164 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "216cc03468b8e6fb9be633023b31b96c",
+    "entities": [
+      {
+        "tableName": "Party",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idGame` TEXT NOT NULL, `idParty` TEXT NOT NULL, `latitude` REAL NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `photo` TEXT NOT NULL, `time` INTEGER NOT NULL, `longitude` REAL NOT NULL, PRIMARY KEY(`idParty`))",
+        "fields": [
+          {
+            "fieldPath": "idGame",
+            "columnName": "idGame",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idParty",
+            "columnName": "idParty",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photo",
+            "columnName": "photo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "idParty"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Player",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, `score` INTEGER NOT NULL,`idPlayer` TEXT NOT NULL, `idParty` TEXT NOT NULL, PRIMARY KEY(`idPlayer`))",
+        "fields": [
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idPlayer",
+            "columnName": "idPlayer",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idParty",
+            "columnName": "idParty",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "idPlayer"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Game",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, `description` TEXT NOT NULL, `numberPlayer` INTEGER NOT NULL, `photo` TEXT NOT NULL, `idGame` TEXT NOT NULL, `time` INTEGER NOT NULL, PRIMARY KEY(`idGame`))",
+        "fields": [
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numberPlayer",
+            "columnName": "numberPlayer",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photo",
+            "columnName": "photo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idGame",
+            "columnName": "idGame",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "idGame"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '216cc03468b8e6fb9be633023b31b96c')"
+    ]
+  }
+}

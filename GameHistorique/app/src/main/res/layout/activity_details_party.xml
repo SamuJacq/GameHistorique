@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/button_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/button_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_party_title"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/title_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/name_game"
+            style="@style/text_style"
+            android:layout_width="367dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/name_detail_game"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_party_title" />
+
+        <ImageView
+            android:id="@+id/picture_game"
+            android:layout_width="266dp"
+            android:layout_height="239dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/default_picture_game"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_game" />
+
+        <TextView
+            android:id="@+id/name_party"
+            style="@style/text_style"
+            android:layout_width="367dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/name_detail_party"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture_game" />
+
+        <TextView
+            android:id="@+id/description_party"
+            style="@style/text_style"
+            android:layout_width="366dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/description_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_party" />
+
+        <TextView
+            android:id="@+id/time_party"
+            style="@style/text_style"
+            android:layout_width="367dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/time_party_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_party" />
+
+        <TextView
+            android:id="@+id/number_player_party"
+            style="@style/text_style"
+            android:layout_width="370dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/number_player_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_party" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_player"
+            android:layout_width="365dp"
+            android:layout_height="141dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="vertical"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number_player_party" />
+
+        <ImageView
+            android:id="@+id/picture_party"
+            android:layout_width="361dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/default_picture_game"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/latitude_party" />
+
+        <TextView
+            android:id="@+id/longitude_party"
+            style="@style/text_style"
+            android:layout_width="167dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/longitude_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_player" />
+
+        <TextView
+            android:id="@+id/latitude_party"
+            style="@style/text_style"
+            android:layout_width="180dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/latitude_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longitude_party" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
